@@ -13,6 +13,7 @@
  Mult* test = new Mult(op1, op2);
  
  EXPECT_EQ(test->evaluate(), 35);
+ EXPECT_EQ(test->stringify(), "(5.000000*7.000000)" );
  }
 
  TEST(MultTest, MultZero) {
@@ -21,6 +22,8 @@
  Mult* test = new Mult(op1, op2);
 
  EXPECT_EQ(test->evaluate(), 0);
+ EXPECT_EQ(test->stringify(), "(0.000000*7.000000)" );
+ 
  }
 
  TEST(MultTest, MultNegative) {
@@ -29,6 +32,7 @@
  Mult* test = new Mult(op1, op2);
 
  EXPECT_EQ(test->evaluate(), -35);
- }
+ EXPECT_EQ(test->stringify(),"(-5.000000*7.000000)" ); 
+}
 
 #endif
