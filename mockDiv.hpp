@@ -13,7 +13,7 @@ class IntDivMock: public Base {
         IntDivMock() { }
 
         virtual double evaluate() { return 2.0; }
-        virtual std::string stringify() { return "(6.000000*3.000000)"; }
+        virtual std::string stringify() { return "(6.000000/3.000000)"; }
 };
 
 class IntDivMock2: public Base {

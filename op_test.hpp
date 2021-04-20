@@ -35,13 +35,6 @@ TEST(OpTest, OpEvaluateNegative) {
     Op* test = new Op(-3.0);
     EXPECT_EQ(test->evaluate(), -3.0);
 }
-
-
-
-
-
-
-
 /*
 TEST(OpTest, OpEvaluateNonZero) {
     SevenOpMock* test = new SevenOpMock();
